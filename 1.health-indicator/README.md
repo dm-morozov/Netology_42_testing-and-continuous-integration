@@ -1,0 +1,1 @@
+[![Статус сборки](https://ci.appveyor.com/api/projects/status/e6605ggww608a62w?svg=true)](https://ci.appveyor.com/project/dm-morozov/netology-42-testing-and-continuous-integration)
