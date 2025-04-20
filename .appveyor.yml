@@ -6,10 +6,11 @@ install:
   - sudo apt-get install -y nodejs
   - node --version
   - npm --version
-  - cd 1.health-indicator
-  - npm install
+  - pwd
+  - ls -la
+  - if [ -d "1.health-indicator" ]; then cd 1.health-indicator && npm install; else echo "Directory 1.health-indicator not found"; exit 1; fi
 build: off
 test_script:
-  - cd 1.health-indicator
-  - npm run lint
-  - npm test
+  - pwd
+  - ls -la
+  - if [ -d "1.health-indicator" ]; then cd 1.health-indicator && npm run lint && npm test; else echo "Directory 1.health-indicator not found"; exit 1; fi
