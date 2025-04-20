@@ -1,0 +1,13 @@
+version: 1.0.{build}
+image: Ubuntu2004
+branches:
+  only:
+    - main
+install:
+  - node --version
+  - npm --version
+  - npm install
+build: off
+test_script:
+  - npm run lint
+  - npm test
