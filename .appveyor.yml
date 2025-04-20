@@ -1,10 +1,10 @@
 version: 1.0.{build}
 image: Ubuntu2004
-environment:
-  matrix:
-    - nodejs_version: "18"
 install:
-  - ps: Install-Product node $env:nodejs_version
+  - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+  - apt-get install -y nodejs
+  - node --version
+  - npm --version
   - cd 1.health-indicator
   - npm install
 build: off
