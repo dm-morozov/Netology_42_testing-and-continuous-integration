@@ -13,4 +13,5 @@ build: off
 test_script:
   - pwd
   - ls -la
-  - if [ -d "1.health-indicator" ]; then cd 1.health-indicator && npm run lint && npm test; else echo "Directory 1.health-indicator not found"; exit 1; fi
+  - npm run lint
+  - npm test
