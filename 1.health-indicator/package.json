@@ -1,7 +1,7 @@
 {
   "name": "1.health-indicator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Health Indicator for Netology",
   "license": "ISC",
   "author": "dm-morozov",
   "type": "module",
@@ -12,7 +12,7 @@
     "build": "webpack --env production",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
