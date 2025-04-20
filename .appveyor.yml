@@ -1,13 +1,14 @@
 version: 1.0.{build}
 image: Ubuntu2004
-branches:
-  only:
-    - main
+environment:
+  matrix:
+    - nodejs_version: "18"
 install:
-  - node --version
-  - npm --version
+  - ps: Install-Product node $env:nodejs_version
+  - cd 1.health-indicator
   - npm install
 build: off
 test_script:
+  - cd 1.health-indicator
   - npm run lint
   - npm test
