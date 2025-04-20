@@ -1,8 +1,9 @@
 version: 1.0.{build}
 image: Ubuntu2004
 install:
-  - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
-  - apt-get install -y nodejs
+  - sudo curl -fsSL https://deb.nodesource.com/setup_18.x | sudo bash -
+  - sudo apt-get update
+  - sudo apt-get install -y nodejs
   - node --version
   - npm --version
   - cd 1.health-indicator
