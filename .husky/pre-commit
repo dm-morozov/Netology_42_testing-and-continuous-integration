@@ -1,5 +1,5 @@
 echo "Running pre-commit hook"
 echo "Current directory: $(pwd)"
 
-npm run lint --silent
-npm run test --silent
+npm run lint
+npm run test
