@@ -1,9 +1,5 @@
-#!/usr/bin/env pwsh
-echo "About to run husky.sh"
-. "$(dirname -- "$0")/_/husky.sh"
-
-
 echo "Running pre-commit hook"
 echo "Current directory: $(pwd)"
 
-npm run lint && npm test
+npm run lint --silent
+npm run test --silent
