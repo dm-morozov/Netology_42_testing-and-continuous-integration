@@ -1,5 +1,6 @@
 import getHealthStatus from "../health.js";
 
+// Тесты
 test.each([
   { input: { name: "Маг", health: 90 }, expected: "healthy" },
   { input: { name: "Маг", health: 51 }, expected: "healthy" },
